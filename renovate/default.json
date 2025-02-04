@@ -9,6 +9,7 @@
     "docker-compose",
     "helm-values",
     "helmv3",
+    "terraform",
     "custom.regex"
   ],
   "branchConcurrentLimit": 15,
