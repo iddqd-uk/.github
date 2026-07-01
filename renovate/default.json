@@ -18,15 +18,15 @@
   "minimumReleaseAge": "7 days",
   "docker-compose": {
     "enabled": true,
-    "fileMatch": ["(^|/)(?:docker-)?compose[^/]*\\.ya?ml$"],
+    "managerFilePatterns": ["(^|/)(?:docker-)?compose[^/]*\\.ya?ml$"],
     "digest": {"enabled": false}
   },
-  "helmv3": {"fileMatch": ["(^|/)values.*\\.ya?ml$"]},
+  "helmv3": {"managerFilePatterns": ["(^|/)values.*\\.ya?ml$"]},
   "customManagers": [
     {
       "customType": "regex",
       "description": "Custom renovations",
-      "fileMatch": [
+      "managerFilePatterns": [
         "(^|/|\\.)Dockerfile$",
         "(^|/)Dockerfile\\.[^/]*$",
         "\\.hcl$",
